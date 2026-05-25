@@ -3615,7 +3615,7 @@
                         AnchorPoint = vec2(0, 0.5);
                         Parent = Items.TopBar;
                         BackgroundTransparency = 0;
-                        Position = dim2(0, 15, 0, 0);
+                        Position = dim2(0, 10, 0, 0);
                         BorderSizePixel = 0;
                         AutomaticSize = Enum.AutomaticSize.XY;
                         TextSize = 14;
@@ -3629,10 +3629,10 @@
                         AutomaticCanvasSize = Enum.AutomaticSize.Y;
                         ScrollBarThickness = 0;
                         Parent = Items.Inline;
-                        Size = dim2(1, 0, 1, -30);
+                        Size = dim2(1, 0, 1, -14);
                         BorderColor3 = rgb(0, 0, 0);
                         TopImage = "rbxassetid://80154988326407";
-                        Position = dim2(0, 0, 0, 30);
+                        Position = dim2(0, 0, 0, 14);
                         BackgroundTransparency = 1;
                         BottomImage = "rbxassetid://80154988326407";
                         BorderSizePixel = 0;
@@ -3664,7 +3664,7 @@
                 end 
 
                 Items.ScrollingFrame:GetPropertyChangedSignal("AbsoluteCanvasSize"):Connect(function()
-                    local Scrolling = Items.ScrollingFrame.AbsoluteCanvasSize.Y > Items.Inline.AbsoluteSize.Y - 30
+                    local Scrolling = Items.ScrollingFrame.AbsoluteCanvasSize.Y > Items.Inline.AbsoluteSize.Y - 14
                     Items.Elements.Size = dim2(1, Scrolling and -18 or -8, 0, 0)
                 end)
                 
